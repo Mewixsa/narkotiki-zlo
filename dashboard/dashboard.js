@@ -43,7 +43,7 @@ async function addAdmin() {
 
 function logout() {
     localStorage.removeItem("currentUser");
-    window.location.href = "/index.html";
+    window.location.href = "..//index.html";
 }
 
 // Проверяем доступ при загрузке

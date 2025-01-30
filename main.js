@@ -78,7 +78,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
         localStorage.setItem("currentUser", JSON.stringify(user));
 
         if (user.role === "admin") {
-            window.location.href = "/dashboard/dashboard.html";
+            window.location.href = "./dashboard/dashboard.html";// Страница для админов
         } else {
             window.location.href = "user.html"; // Страница для обычных пользователей
         }
