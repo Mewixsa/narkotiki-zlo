@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жизнь без наркотиков</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Жизнь без наркотиков</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#dangers">Опасность наркотиков</a></li>
+                <li><a href="#healthy">Выбираем ЗОЖ</a></li>
+                <li><a href="#login">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bloks">
+        <section class="block" id="home">
+            <div class="text">
+                <h2>Добро пожаловать!</h2>
+                <p>Жизнь – это бесконечные возможности, открытия и радость! Сделай правильный выбор!</p>
+            </div>
+            <img src="/images/1683327018_kartinkof-club-p-kartinki-antinarkoticheskoi-napravlennosti-22.jpg"
+                alt="Мотивирующее изображение">
+        </section>
+
+        <section class="block" id="about">
+            <img src="/images/article6028-1.jpg" alt="О нас">
+            <div class="text">
+                <h2>О нас</h2>
+                <p>Наша миссия – вдохновлять людей на здоровый образ жизни, показывать альтернативы и доказывать, что
+                    счастье возможно без вредных привычек.</p>
+            </div>
+        </section>
+
+        <section class="block" id="dangers">
+            <div class="text">
+                <h2>Опасность наркотиков</h2>
+                <p>Наркотики разрушают мечты, здоровье и судьбы. Сделай осознанный выбор!</p>
+            </div>
+            <img src="/images/c904d323-0837-4849-9401-75679d72e79e.jpg" alt="Опасность наркотиков">
+        </section>
+        <section class="block" id="healthy">
+            <img src="/images/unnamed.jpg" alt="Здоровый образ жизни">
+            <div class="text">
+                <h2>Выбираем ЗОЖ</h2>
+                <p>Занимайся спортом, путешествуй, находи новые увлечения! Жизнь без наркотиков – это энергия, успех и
+                    уверенность в завтрашнем дне!</p>
+            </div>
+        </section>
+    </div>
+    <div class="login">
+        <section id="login">
+            <form id="loginForm" class="">
+                <h2>Вход</h2>
+                <input type="text" placeholder="Имя" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+                <p class="regbttonc" onclick="reg_window()">Зарегистрироваться >>></p>
+            </form>
+            <form id="regForm" class="none">
+                <h2>Регистрация</h2>
+                <input type="text" placeholder="Имя" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Подтвердите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+                <p class="logbttonc" onclick="login_window()">Войти >>></p>
+
+            </form>
+        </section>
+    </div>
+    <button id="scrollTopBtn" title="Наверх">↑</button>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
