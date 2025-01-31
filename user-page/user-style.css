@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #006e93, #00306e);
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 2%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    padding: 10px;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    background-color: #006eff6e;
+    transition: .5s;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    scroll-behavior: smooth;
+}
+
+nav ul li a:hover {
+    color: #f4d03f;
+}
+
+.bloks {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+section {
+    width: 95%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+.block {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.block.visible, .login.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.block h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+.text {
+    width: 50%;
+}
+
+img {
+    border-radius: 10px;
+    width: 400px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: hidden;
+    background-color: rgb(0, 76, 147);
+    color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scrollTopBtn.show {
+    display: block;
+    opacity: 1;
+    transition: .3s;
+    transition-duration: .3s;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scrollTopBtn:hover {
+    background-color: #83bfff;
+    color: white;
+    border-color: #51a5ff;
+    transition-duration: .3s;
+    transition: .3s;
+}
+
+@media (max-width: 1024px) {
+    .block {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+
+    li {
+        width: fit-content;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    button {
+        width: fit-content;
+    }
+
+    #scrollTopBtn {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}

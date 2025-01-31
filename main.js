@@ -80,7 +80,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
         if (user.role === "admin") {
             window.location.href = "./dashboard/dashboard.html";// Страница для админов
         } else {
-            window.location.href = "user.html"; // Страница для обычных пользователей
+            window.location.href = "./user-page/user-page.html"; // Страница для обычных пользователей
         }
     } else {
         alert("Неверный логин или пароль");
