@@ -30,3 +30,9 @@ function revealBlocks() {
 
 window.addEventListener('scroll', revealBlocks);
 window.addEventListener('load', revealBlocks);
+
+
+function logout() {
+    localStorage.removeItem("currentUser");
+    window.location.href = "..//index.html";
+}

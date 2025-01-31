@@ -101,7 +101,10 @@ section {
 
 .block.visible, .login.visible{
     opacity: 1;
-    transform: translateY(0);
+}
+
+.login.visible {
+    opacity: 1;
 }
 
 .block h2 {
