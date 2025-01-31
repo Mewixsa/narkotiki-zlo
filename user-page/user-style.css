@@ -170,6 +170,15 @@ img {
     background:rgba(0, 217, 255, 0.234) ;
 }
 
+
+footer {
+    background-color: rgba(0, 0, 0, 0.83);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
 @media (max-width: 1024px) {
     .block {
         flex-direction: column;
@@ -203,6 +212,10 @@ img {
         padding: 8px 16px;
     }
 
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -248,5 +261,10 @@ img {
 
     nav ul li {
         margin: 0 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 8px;
     }
 }

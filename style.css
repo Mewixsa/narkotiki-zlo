@@ -257,6 +257,15 @@ form {
     transition: .3s;
 }
 
+footer {
+    background-color: rgba(0, 0, 0, 0.83);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
 @media (max-width: 1024px) {
     /* .container {
         flex-direction: column;
@@ -297,6 +306,11 @@ form {
 
     form {
         width: 70%
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
@@ -367,5 +381,10 @@ form {
 
     nav ul li {
         margin: 0 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 8px;
     }
 }

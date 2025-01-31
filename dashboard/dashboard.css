@@ -13,6 +13,7 @@ body {
 .dashboard-container {
     max-width: 800px;
     margin: 100px auto;
+    margin-bottom: 20px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -74,4 +75,15 @@ input {
 
 .logout-btn:hover {
     background: darkred;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.83);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
