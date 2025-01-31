@@ -95,6 +95,13 @@ section {
     align-items: center;
     justify-content: center;
     justify-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.block.visible, .login.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .block h2 {
@@ -113,7 +120,8 @@ section {
     justify-items: center;
     text-align: center;
     align-items: center;
-
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 #login {

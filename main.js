@@ -2,28 +2,28 @@ var mybutton = document.getElementById("scrollTopBtn");
 
 window.onscroll = function () {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        mybutton.classList.add("show"); 
+        mybutton.classList.add("show");
     } else {
-        mybutton.classList.remove("show"); 
+        mybutton.classList.remove("show");
     }
 };
 
 mybutton.onclick = function () {
     window.scrollTo({
         top: 0,
-        behavior: "smooth" 
+        behavior: "smooth"
     });
 }
 
 logbtt = document.getElementById('loginForm');
 regbtt = document.getElementById('regForm');
 
-function login_window(){
+function login_window() {
     regbtt.classList.add("none")
     logbtt.classList.remove("none")
 }
 
-function reg_window(){
+function reg_window() {
     logbtt.classList.add("none")
     regbtt.classList.remove("none")
 }
@@ -87,7 +87,20 @@ document.getElementById("loginForm").addEventListener("submit", async function (
     }
 });
 
+function revealBlocks() {
+    let elements = document.querySelectorAll('.block, .login');
+    let windowHeight = window.innerHeight;
+    
+    elements.forEach(el => {
+        let elTop = el.getBoundingClientRect().top;
+        if (elTop < windowHeight - 100) {
+            el.classList.add('visible');
+        }
+    });
+}
 
+window.addEventListener('scroll', revealBlocks);
+window.addEventListener('load', revealBlocks);
 
 
 
