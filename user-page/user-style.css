@@ -154,8 +154,8 @@ img {
 }
 
 .logout-btn {
-    margin-top: 20px;
-    background: rgb(14, 0, 141);
+    margin: 20px;
+    background:rgb(3, 171, 255) ;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -167,7 +167,7 @@ img {
 }
 
 .logout-btn:hover {
-    background: rgb(14, 0, 205);
+    background:rgba(0, 217, 255, 0.234) ;
 }
 
 @media (max-width: 1024px) {
