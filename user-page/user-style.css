@@ -89,7 +89,8 @@ section {
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.block.visible, .login.visible{
+.block.visible,
+.login.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -155,7 +156,7 @@ img {
 
 .logout-btn {
     margin: 20px;
-    background:rgb(3, 171, 255) ;
+    background: rgb(3, 171, 255);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -167,16 +168,23 @@ img {
 }
 
 .logout-btn:hover {
-    background:rgba(0, 217, 255, 0.234) ;
+    background: rgba(0, 217, 255, 0.234);
 }
 
 
 footer {
     background-color: rgba(0, 0, 0, 0.83);
-    color: white;
+    color: rgb(126, 126, 126);
     text-align: center;
     padding: 15px;
     font-size: 16px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+footer div {
+    text-align: left;
 }
 
 @media (max-width: 1024px) {
